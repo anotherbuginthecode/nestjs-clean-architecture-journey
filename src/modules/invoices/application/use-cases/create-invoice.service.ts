@@ -15,7 +15,7 @@ export class CreateInvoiceService {
     const invoice = new Invoice(
       crypto.randomUUID(),
       createInvoiceDto.customerId,
-      createInvoiceDto.amountCents,
+      createInvoiceDto.amount,
     );
     return await this.invoiceRepository.save(invoice);
   }
