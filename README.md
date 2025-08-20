@@ -1,3 +1,5 @@
+![Banner NestJS Clean Architecture Journey](https://imgur.com/a/gJ9yf1M)
+
 ## Branches Overview
 
 This repository demonstrates three architectural approaches for building a simple REST API using NestJS with PostgreSQL and Drizzle ORM:
