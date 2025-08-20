@@ -2,7 +2,7 @@
 
 ## Branches Overview
 
-This repository demonstrates three architectural approaches for building a simple REST API using NestJS with PostgreSQL and Drizzle ORM:
+This repository demonstrates different architectural approaches for building a simple REST API using NestJS with PostgreSQL and Drizzle ORM:
 
 ### 1. `basic-rest-api`
 
@@ -13,11 +13,6 @@ This repository demonstrates three architectural approaches for building a simpl
 
 - **Description:** Implements Domain-Driven Design (DDD) principles. The codebase is organized into layers: domain, application, infrastructure, and API. Each use case is encapsulated in its own service, promoting separation of concerns and testability.
 - **Use Case:** Suitable for medium to large projects where maintainability, scalability, and clear boundaries between business logic and infrastructure are important.
-
-### 3. `ddd-structure-using-facade-pattern`
-
-- **Description:** Builds on the DDD structure by introducing the Facade pattern. All use cases are aggregated behind a single facade class, simplifying the API layer and making it easier to manage dependencies and orchestrate complex operations.
-- **Use Case:** Ideal for complex domains where you want to further decouple controllers from business logic and aggregate multiple use cases behind a unified interface.
 
 ---
 
@@ -40,8 +35,6 @@ git branch -a
 git checkout basic-rest-api
 # or
 git checkout ddd-structure
-# or
-git checkout ddd-structure-using-facade-pattern
 ```
 
 ### 3. Install Dependencies
