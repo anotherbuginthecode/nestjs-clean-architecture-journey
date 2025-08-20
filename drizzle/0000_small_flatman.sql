@@ -1,6 +1,6 @@
 CREATE TABLE "invoices" (
-	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"id" uuid PRIMARY KEY NOT NULL,
 	"customer_id" uuid NOT NULL,
-	"amount_cents" integer NOT NULL,
+	"amount" integer NOT NULL,
 	"paid" boolean DEFAULT false NOT NULL
 );

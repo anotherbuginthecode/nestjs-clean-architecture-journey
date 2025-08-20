@@ -1,5 +1,5 @@
 {
-  "id": "c3282333-f912-4b5e-824e-e1a4badbbf58",
+  "id": "ec31092a-f684-457a-8f22-8886edbd7600",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -12,8 +12,7 @@
           "name": "id",
           "type": "uuid",
           "primaryKey": true,
-          "notNull": true,
-          "default": "gen_random_uuid()"
+          "notNull": true
         },
         "customer_id": {
           "name": "customer_id",
@@ -21,8 +20,8 @@
           "primaryKey": false,
           "notNull": true
         },
-        "amount_cents": {
-          "name": "amount_cents",
+        "amount": {
+          "name": "amount",
           "type": "integer",
           "primaryKey": false,
           "notNull": true

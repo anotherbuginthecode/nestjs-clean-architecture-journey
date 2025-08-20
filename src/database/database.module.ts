@@ -4,7 +4,7 @@ import { drizzle } from 'drizzle-orm/node-postgres';
 import { Pool } from 'pg';
 import { DATABASE_CONNECTION } from './database-connection';
 // ADD SCHEMA IMPORTS HERE
-import { InvoicesTable } from '../modules/invoices/models/schema';
+import { InvoicesTable } from '../modules/invoices/infrastructure/models/schema';
 
 @Module({
   providers: [
