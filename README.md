@@ -1,4 +1,4 @@
-![Banner NestJS Clean Architecture Journey](https://imgur.com/a/gJ9yf1M)
+![Banner NestJS Clean Architecture Journey](assets/banner.png)
 
 ## Branches Overview
 
