@@ -14,11 +14,11 @@ export class InvoicesService {
   ) {}
 
   async save(invoice: CreateInvoiceDto): Promise<Invoice> {
+    console.log('Saving invoice:', invoice);
     const [created] = await this.db
       .insert(InvoicesTable)
-      .values(invoice)
+      .values({ id: crypto.randomUUID(), ...invoice })
       .returning();
-    console.log('Invoice created:', created);
     return created;
   }
 

@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 export const CreateInvoiceSchema = z.object({
   customerId: z.uuid(),
-  amountCents: z.number().int().min(0),
+  amount: z.number().int().min(0),
   paid: z.boolean().optional(),
 });
 
